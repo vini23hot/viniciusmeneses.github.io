@@ -115,7 +115,7 @@ section:nth-of-type(even) h2 {
   transition: all 0.2s ease;
   cursor: default;
   user-select: none;
-  width: 108px;
+  width: 120px;
 }
 .skills-list li:hover {
   background-color: #65559B;
