@@ -3,23 +3,27 @@
 }
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 400px auto auto auto auto 50px;
+  grid-template-rows: 100vh auto auto auto auto 50px;
   margin: 0;
   font-family: 'Nunito', sans-serif;
 }
 header {
-  position: relative;
+  color: #fff;
+  text-align: center;
   background: linear-gradient(180deg, #5F5F5F, #232323);
+}
+header > div {
+  height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  text-align: center;
 }
 .title {
   font-size: 2.2rem;
@@ -39,16 +43,22 @@ header {
   margin: 0 10px;
   display: inline-block;
 }
-.social-media i {
+.social-media i, .slide-anchor {
   color: #fff;
   font-size: 30px;
   transition: all 0.2s ease;
 }
-.social-media i:hover {
+.social-media i:hover, .slide-anchor:hover {
   color: #8578B4;
 }
+.slide-anchor {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 11px);
+}
 section:nth-of-type(odd) {
-  margin: 50px 10vw;
+  padding-top: 50px;
+  margin: 0px 10vw 50px 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,6 +213,38 @@ footer i {
 
 section h2.section-hover {
   border-bottom: solid 5px #65559B;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #65559b;
+  border: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #65559b;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #65559b;
+}
+::-webkit-scrollbar-track {
+  background: #cfcfcf;
+  border: 0;
+}
+::-webkit-scrollbar-track:hover {
+  background: #cfcfcf;
+}
+::-webkit-scrollbar-track:active {
+  background: #cfcfcf;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
 
 @media (max-width: 765px) {

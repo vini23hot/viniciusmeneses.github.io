@@ -6,3 +6,5 @@ document.querySelectorAll('section').forEach(section => {
       this.firstElementChild.classList.remove('section-hover')
   }, false)
 })
+
+AOS.init()
