@@ -12,7 +12,7 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: 100vh auto auto auto auto 50px;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -149,7 +149,8 @@ section:nth-of-type(even) h2 {
   transition: all 0.2s ease;
   cursor: default;
   user-select: none;
-  width: 120px;
+  min-width: 120px;
+  max-height: 36px;
 }
 
 .skills-list li:hover {
